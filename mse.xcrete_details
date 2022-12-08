@@ -1,0 +1,15 @@
+#’ @title Calculate mass-specific excretion rate
+#’ @description This function calculates mass-specific excretion rate
+#’ @details This function takes organism mass and previously calculated excretion rates from the data frame that results from the total.xcrete function and calculates mass-specific excretion rates
+#’
+#’ @param mass this parameter is the mass of the organism(s) in the excretion chamber
+#‘
+#‘ @returns The outputs from this function are the mass-specific excretion rates for each time interval, both printed in the console and added to the previously-existing dataframe
+#' @examples
+#' ##### Example 1 #####
+#' library(xcrete)
+#' 
+#' # After calculating the individual excretion rates with the total.xcrete function, enter the organisms mass as the only parameter
+#' mse.xcrete(2)
+#'
+#' @export

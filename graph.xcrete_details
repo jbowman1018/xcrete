@@ -1,0 +1,15 @@
+#’ @title Graphs mass-specific excretion rate
+#’ @description This function graphs mass-specific excretion rate
+#’ @details This function takes the mass-specific excretion rates from the mse.xcrete function and graphs them on the y-axis with time on the x-axis
+#’
+#’ @param df_name this parameter is the exact name of the dataframe within which the MSE had been calculated - if unaltered after the mse.xcrete function, this will be "xcrete_output"
+#‘
+#‘ @returns The output of this function is a dotplot with time on the x-axis and mass-specific excretion rate on the y-axis
+#' @examples
+#' ##### Example 1 #####
+#' library(xcrete)
+#' 
+#' # After calculating the mass-specific excretion rates with the mse.xcrete function, enter the dataframe name as the only parameter
+#' graph.xcrete(xcrete_output)
+#'
+#' @export

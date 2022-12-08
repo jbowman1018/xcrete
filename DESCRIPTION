@@ -1,0 +1,12 @@
+Package: xcrete
+Title: Calculates and plots excretion
+Version: 0.0.0.9001
+Authors@R: 
+    person("Jacob", "Bowman", , "jacob.bowman@siu.edu", role = c("aut", "cre"))
+Description: This R package takes nutrient concentration data from multiple time intervals, calculates basal metabolic rate using non-linear modelling, then plots the data and model.
+Depends: ggplot2
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.2
+

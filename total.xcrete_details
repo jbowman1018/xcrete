@@ -1,0 +1,20 @@
+#’ @title Calculate total excretion
+#’ @description This function calculates excretion rate over time 
+#’ @details This function takes into account the amount of time between nutrient density measurements, the size of the excretion chamber, and the size of the samples taken from the excretion chamber to calculate individual excretion rate given nutrient density measurements
+#’
+#’ @param interval this parameter is the amount of time between each sample taken
+#’ @param volume this parameter is the total volume of the excretion chamber at the time the organism(s) are first placed within
+#‘ @param sample this parameter is the volume of the sample taken from the excretion chamber at each time interval
+#' @param density1 this parameter is the total nutrient concentration of the first sample taken from the excretion chamber
+#' @param density2 this parameter is the total nutrient concentration of the second sample taken from the excretion chamber
+#' @param density3 this parameter is the total nutrient concentration of the third sample taken from the excretion chamber
+#‘
+#‘ @returns The output from this function is a data frame containing four columns: Time, Raw_Nutrients, Density, and Rate. In the column labelled Rate, the newly calculated excretion rates will appear in row 2 and 3 - note that row 1 will appear as NA because no excretion will have taken place before the first time interval. Row 2 will display the excretion rate in the time between the first and second samples, and row 3 will display the excretion rate in the time between the second and third samples. For those interested solely in the individual excretion rate and not the dataframe which facilitates calculation of the mass-specific excretion rate, a printout of these values will also appear in the console.
+#' @examples
+#' ##### Example 1 #####
+#' library(xcrete)
+#' 
+#' # Enter parameters and measured nutrient densities
+#' total.xcrete(1,100,1,0.5,15.5,27)
+#'
+#' @export
